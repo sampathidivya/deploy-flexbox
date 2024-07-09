@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+    body {
+        font-family: Arial;
+        margin: 0;
+        padding:0;
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        height: 100vh;
+        background-color: white;
+    }
+    .container {
+        height: 50Px;
+        width: 1000px;
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 1300px;
+        gap: 20Px;
+    }
+    .card {
+        height: 350Px;
+        width:300Px;
+        background-color: white;
+        border: 2px solid #ddd;
+        border-radius: 2px;
+        box-shadow: 0 2px 4px black;
+        padding: 30px;
+        box-sizing: border-box;
+    }
+    .card img {
+        max-width: 70px;
+        margin-bottom:10px;
+    }
+    .card h2 {
+        font-size: 20px;
+        margin: 0 0 10Px;
+    }
+    .card p {
+        font-size: 15px;
+        margin: 0 0 5px;
+    }
+    .card i{
+        color: rgb(34, 210, 245);
+        margin-bottom: 15px;
+    }
+    .card .installs {
+        font-size: 13px;
+        color: grey;
+    }
+    .card a {
+        text-decoration: none;
+        color: black;
+        font-size: 14px;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <img src="https://pbs.twimg.com/profile_images/1526231349354303489/3Bg-2ZsT_400x400.jpg  "alt="Instagram">
+            <h2>Instagram</h2>
+            <p>Social media</p>
+            <p>Instagram is a photo and video sharing social networking service owned by Meta Platforms.</p>
+            <div class="installs">Installed 350 times</div>
+            <a href="#">View ></a>
+        </div>
+        <div class="card">
+            <img src="https://cdn.pixabay.com/photo/2015/08/03/13/58/whatsapp-873316_1280.png " alt="Whatsapp">
+            <h2>Whatsapp</h2>
+            <p>Social media</p>
+            <p>WhatsApp (officially WhatsApp Messenger) is an instant messaging (IM) and voice-over-IP (VoIP) service owned by technology conglomerate Meta.</p>
+            <div class="installs">Installed 750 times</div>
+            <a href="#">View ></a> 
+        </div>
+        <div class="card">
+            <img src="https://play-lh.googleusercontent.com/ODwuO86g8lbgiWbhRLclRnEstD0WAhlXYW9Me2rY2huXr7H0NYMAKUtwami7uyREN9Q" alt="AJIO">
+            <h2>Ajio</h2>
+            <p>Online Shopping Platform</p>
+            <p>AJIO, a fashion and lifestyle brand, is Reliance Retail's digital commerce initiative and is the ultimate fashion destination for styles that are handpicked</p>
+            <div class="installs">Installed 500 times</div>
+            <a href="#">View ></a>
+            
+        </div>
+        <div class="card">
+            <img src="https://images.indianexpress.com/2022/01/Gmail.jpg "alt="Gmail">
+            <h2>Gmail</h2>
+            <p>Email service provided by GOOGLE</p>
+            <p>Gmail is the email service provided by Google. As of 2019, it had 1.5 billion active users worldwide, making it the largest email service in the world.</p>
+            <div class="installs">Installed 700 times</div>
+            <a href="#">View ></a>
+            
+        </div>
+        <div class="card">
+            <img src="https://play-lh.googleusercontent.com/KxeSAjPTKliCErbivNiXrd6cTwfbqUJcbSRPe_IBVK_YmwckfMRS1VIHz-5cgT09yMo=w240-h480-rw "alt="Snapchat">
+            <h2>Snap Chat</h2>
+            <p>social media platform and multimedia messaging application </p>
+            <p>Snapchat is a popular messaging app that lets users exchange pictures and videos, called snaps, that are meant to disappear after they're viewed</p>
+            <div class="installs">Installed 350 times</div>
+            <a href="#">View ></a>
+            
+        </div>
+        <div class="card">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAdVBMVEUKZsL///8AZME7eMgAWb7i6fUAXL/Az+oAYsFjj9B1m9QAYMBGgswAVr0AXb8AWr5ZjdBWh80ZbMTO3PCzx+drl9T2+f2Ssd7G1u0dbsXF1e3w9fs2dsfl7ffV4fIocsaApNmowOSMrNyrw+Wbt+AAUryFqNr2AL+0AAADz0lEQVR4nO3ca1+qMACAcZiA5ATMW+a98vT9P+LROkXiNruMLXae/2v1xyOy6QCjCAAAAAAAAAAAAAAAAAAAALBGnPjeiPbkZSJ36/W4qmSQlbIYTTfxyXx72CXBNYpkv4o/mAwDayx7m7hhWoWUWM2afUebcTiJ5UAReDweo1AS5VAZeNyLgXxQhZxrCo/Hou+NsyJ70AXGcS+EnSgifWC8SHxvngXyzlAYhzCeJqmp8FH63r4fE8IUGC+6P9YI3VTxatP9AzFXz/bvCt8b+GNyT2HX5aov3UEVip4xMO3+SBNlxsJp6Xv7fq5amApn3Z/xzQfivAzgW1tUrPSFDwF8SM1zfiDLisUk5KPwREjN5/QpgKnilbhXrmP0uz/bvxPR9jLwEFDgacm7+Ut/c5v53ijLSvHw4WhMB0Xue4usE2U1vOtv03Qy3e+S8PpeCJlVSZKVgcyCAIDfT+SyrI6Ok0+As4+QVbGbHabLxWTRf7qb7YrMa6XIdZpbpX3k2QPzSuyXjV8rk8dd4i1SjG90bs+3SQx1D7yvH5gnt0vlr830ufK06mNYMW2cl8nUm370/laIYmQ4W3covSwaGAob68FZ/1phudOuiLyYDwoPu9FeoSiejX0nE+H+Z4u1QiHNO/DVfOh8hdJWYT42LLx+NHN9XtlSoVxrL8tpGjheILFTqFmvU7txO6RaKZT5Jz+ir9xeiWSl8M9nBpnayunVqzYKh9eniXNTl8vpVvbhFwOP74nDadFG4RdGmbeXdriibqPwG2budqKnQofXQHgqjIfOhlNfhX1nX958FcaZq53ordDZOXRvhVNXX8DtF87TNP3EDLlyNZpaLlwOxkWSJIWYXX20q4vIrRY+jat/S4tCVmPjBWXuDkSLhave2V02ojDeBxAfHK1n2CvcZs1vYhcXQJxZOhpqrBWqvofpr7fSPOE3F84vTgKcXvze9AxHvy9sFY6U40Zleo6jMxmWChfqHWK8n8PRdGGpULe4lBiWqHZdKtzqRg3TkxwtudkpfNbN3tKwSNWpQu0hJQyrVF0q3GgHftPNcV0qXOp/sBdhFBou6jcMpl0qNNxrmlz8XUMnC/fBFw7067uGG40ptITCGoVqFLaPwhqFahS2j8IahWoUto/CGoVqFLaPwhqFahS2j8IahWoUto/CGoVqFLaPwhqFahS2j8IahWoUto/CGoVqFLaPwlqAhc1/4NHfx2Qq9H7lXhT1dNaNf1HqDc/djt4YrroXa+3rtx1Wb4PWlQfq/zPrWy8PAAAAAAAAAAAAAAAAAAAA4D/0F5lQSZ+5G/qbAAAAAElFTkSuQmCC"alt="LinkedIn">
+            <h2>Linked In</h2>
+            <p>Business and employment-focused social media platform </p>
+            <p>LinkedIn is a powerful platform for professional networking,job searching,content sharing,company promotion,and staying updated with industry trends and insights.</p>
+            <div class="installs">Installed 350 times</div>
+            <a href="#">View ></a>
+        </div>
+    </div>
+</body>
+</html>
